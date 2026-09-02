@@ -398,15 +398,23 @@ function Impact({ onSample }) {
                 <p className="text-[12px] text-white/30 mb-1">Monthly deep focus hours gained</p>
                 <p className="text-4xl font-black text-white">+{focusHrs} <span className="text-lg font-normal text-white/30">hours</span></p>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
-                  <p className="text-[12px] text-white/30 mb-1">Productivity value</p>
-                  <p className="text-2xl font-bold text-emerald-400">${value.toLocaleString()}</p>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
+                  <p className="text-[11px] text-white/30 mb-1">NeuroBite cost</p>
+                  <p className="text-xl font-bold text-white/60">${cost.toLocaleString()}<span className="text-[10px] text-white/20">/mo</span></p>
                 </div>
-                <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
-                  <p className="text-[12px] text-white/30 mb-1">ROI ratio</p>
-                  <p className="text-2xl font-bold text-[#0088FF]">{roi}x</p>
+                <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
+                  <p className="text-[11px] text-white/30 mb-1">Productivity value</p>
+                  <p className="text-xl font-bold text-emerald-400">${value.toLocaleString()}<span className="text-[10px] text-white/20">/mo</span></p>
                 </div>
+                <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
+                  <p className="text-[11px] text-white/30 mb-1">ROI</p>
+                  <p className="text-xl font-bold text-[#0088FF]">{roi}x</p>
+                </div>
+              </div>
+              <div className="p-4 rounded-2xl bg-emerald-500/[0.05] border border-emerald-500/10">
+                <p className="text-[12px] text-emerald-400/60 mb-0.5">Net monthly gain</p>
+                <p className="text-2xl font-black text-emerald-400">+${(value - cost).toLocaleString()}</p>
               </div>
               <button onClick={onSample} className="btn-magnetic w-full py-4 rounded-xl font-semibold text-[14px] text-white bg-[#0088FF] shadow-lg shadow-[#0088FF]/20 flex items-center justify-center gap-2">
                 Get sample for {count} people <ArrowRight className="w-4 h-4" />
