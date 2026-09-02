@@ -7,26 +7,26 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
   const compartments = {
     nootropics: {
       id: 'nootropics',
-      name: 'Nootropik Odak Kapsülleri',
-      category: 'Zihinsel Berraklık & Nöron Koruması',
-      badge: 'Solgar & Venatura Sertifikalı',
+      name: 'Nootropic Focus Capsules',
+      category: 'Mental Clarity & Neuro-Protection',
+      badge: 'Solgar & Venatura Certified',
       icon: Zap,
       color: 'from-blue-500 to-indigo-600',
       textColor: 'text-[#0088FF]',
       borderColor: 'border-[#0088FF]',
       bgGlow: 'bg-[#0088FF]/10',
       items: [
-        { name: 'Lion’s Mane (Yeleli Mantar) Ekstresi', detail: '500mg - NGF (Nöron Büyüme Faktörü) uyarımı' },
-        { name: 'Rhodiola Rosea Adaptojen', detail: '200mg - Zihinsel yorgunluk & stres direnci' },
-        { name: 'Bacopa Monnieri', detail: '150mg - Hafıza ve bilgi işleme hızı' }
+        { name: 'Lion’s Mane Extract', detail: '500mg - NGF (Nerve Growth Factor) stimulation' },
+        { name: 'Rhodiola Rosea Adaptogen', detail: '200mg - Mental fatigue & stress resilience' },
+        { name: 'Bacopa Monnieri', detail: '150mg - Memory retention & processing speed' }
       ],
-      science: 'Nöronlar arasındaki sinaptik iletimi hızlandırır, ekran karşısında 4 saati aşan odaklanma sürelerinde beyin sisini (brain fog) %80 oranında azaltır.',
-      brandInfo: '%100 GMP, ISO 22000 ve T.C. Tarım ve Orman Bakanlığı onaylı orijinal Solgar/Venatura kapsüllerinden günlük steril olarak paketlenir.'
+      science: 'Accelerates synaptic transmission between neurons, eliminating brain fog by up to 80% during intense 4+ hour deep work blocks.',
+      brandInfo: 'Sterile pre-portioned daily dosage using 100% GMP, ISO 22000, and FDA-certified original Solgar/Venatura capsules.'
     },
     energy: {
       id: 'energy',
-      name: 'Omega-3 DHA + CoQ10 & B12 Kompleks',
-      category: 'Hücresel Enerji (ATP) & Beyin Yapısı',
+      name: 'Omega-3 DHA + CoQ10 & B12 Complex',
+      category: 'Cellular ATP Energy & Brain Membrane',
       badge: 'Ocean Ultra Purified & Thorne',
       icon: HeartPulse,
       color: 'from-cyan-400 to-blue-500',
@@ -34,35 +34,35 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
       borderColor: 'border-cyan-400',
       bgGlow: 'bg-cyan-500/10',
       items: [
-        { name: 'Ultra Purified DHA Balık Yağı', detail: '600mg Yüksek DHA (Trigliserid Form)' },
-        { name: 'Coenzyme Q10 (Ubiquinol)', detail: '100mg - Mitokondriyal ATP sentezi' },
-        { name: 'Methylcobalamin (Aktif B12)', detail: '1000mcg - Sinir kılıfı & odak koruması' }
+        { name: 'Ultra Purified DHA Fish Oil', detail: '600mg High DHA (Triglyceride Form)' },
+        { name: 'Coenzyme Q10 (Ubiquinol)', detail: '100mg - Mitochondrial ATP synthesis' },
+        { name: 'Methylcobalamin (Active B12)', detail: '1000mcg - Myelin sheath & focus defense' }
       ],
-      science: 'Beyin dokusunun %60’ı yağdan oluşur. Yüksek DHA hücresel zarları yenilerken CoQ10 öğleden sonra saat 15:00 çöküşünü hücresel düzeyde engeller.',
-      brandInfo: 'Ağır metallerden arındırılmış (IFOS 5 Yıldız Onaylı) Ocean Plus ve Thorne ürünleri kullanılarak üretilmiştir.'
+      science: 'Brain tissue is 60% fat. High-DHA rejuvenates cell membranes while CoQ10 prevents the dreaded 3:00 PM cellular slump.',
+      brandInfo: 'Heavy-metal purified IFOS 5-Star Certified Ocean Plus & Thorne pharmaceutical grade ingredients.'
     },
     snacks: {
       id: 'snacks',
-      name: 'Bio-Snack Glikoz Dengeleyici',
-      category: 'Temiz Beyin Yakıtı & Mikro-Besin',
-      badge: 'Datça & Malatya Organik Çiftlik',
+      name: 'Bio-Snack Glucose Balancer',
+      category: 'Clean Neural Fuel & Micro-Nutrients',
+      badge: 'Datça & Malatya Organic Farm',
       icon: Flame,
       color: 'from-amber-400 to-orange-500',
       textColor: 'text-amber-400',
       borderColor: 'border-amber-400',
       bgGlow: 'bg-amber-500/10',
       items: [
-        { name: 'Çiğ Datça Bademi', detail: '8 Adet - Doğal Magnezyum & E Vitamini' },
-        { name: 'Medjoul Kral Hurması', detail: '1 Adet - Yavaş salınımlı fruktoz & potasyum' },
-        { name: 'Liyofilize Yaban Mersini / Goji Berry', detail: '10g - Resveratrol & Antioksidan' }
+        { name: 'Raw Datça Almonds', detail: '8 Pieces - Natural Magnesium & Vitamin E' },
+        { name: 'Medjoul King Date', detail: '1 Piece - Slow-release fructose & potassium' },
+        { name: 'Freeze-Dried Blueberries / Goji', detail: '10g - Resveratrol & Anti-oxidants' }
       ],
-      science: 'İşlenmiş şekerli atıştırmalıkların yarattığı kan şekeri dalgalanmasını (insulin spike) önler; nöronlara sürekli ve dengeli glikoz akışı sağlar.',
-      brandInfo: '%100 çiğ, kavrulmamış, koruyucu ve ilave şeker içermeyen birinci sınıf organik yerel mahsul.'
+      science: 'Prevents insulin spikes caused by traditional office pastries, supplying a steady stream of glucose directly to active neurons.',
+      brandInfo: '100% raw, unroasted, non-GMO organic local harvest with zero added sugars or preservatives.'
     },
     water: {
       id: 'water',
-      name: 'Oksijen Zengini Alkalin Smart Water (250ml)',
-      category: 'Hücresel Hidrasyon & Baş Ağrısı Önleyici',
+      name: 'Oxygenated Alkaline Smart Water (250ml)',
+      category: 'Cellular Hydration & Headache Defense',
       badge: 'pH 8.5+ Electrolyte Boosted',
       icon: Droplets,
       color: 'from-emerald-400 to-[#0088FF]',
@@ -70,46 +70,46 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
       borderColor: 'border-emerald-400',
       bgGlow: 'bg-emerald-500/10',
       items: [
-        { name: 'Çözünmüş Oksijenli Alkalin Su', detail: 'pH 8.5+ (Normal sudan 3x fazla oksijen)' },
-        { name: 'Sodyum, Potasyum, Magnezyum İyonları', detail: 'Hızlı elektrolit dengesi' }
+        { name: 'Dissolved Oxygen Alkaline Water', detail: 'pH 8.5+ (3x more oxygen than tap water)' },
+        { name: 'Sodium, Potassium, Magnesium Ions', detail: 'Rapid electrolyte rebalancing' }
       ],
-      science: 'Vücuttaki %1.5’lik hafif hidrasyon kaybı bile dikkat süresinde %12 düşüşe yol açar. Oksijenli alkalin su kan-beyin bariyerinde hızlı emilim sağlar.',
-      brandInfo: 'BPA içermeyen cam ve geri dönüştürülebilir mat şişelerde günlük soğuk taze dolum.'
+      science: 'Even a 1.5% drop in hydration reduces attention span by 12%. Oxygenated alkaline water passes the blood-brain barrier rapidly.',
+      brandInfo: 'Freshly bottled daily in BPA-free recyclable matte bottles.'
     },
     oil: {
       id: 'oil',
-      name: 'Nane & Biberiye Aromaterapi Roll-On (5ml)',
-      category: 'Anlık Odak Sinyali & Zihinsel Ferahlık',
-      badge: '%100 Saf Uçucu Yağ',
+      name: 'Peppermint & Rosemary Aromatherapy Roll-On (5ml)',
+      category: 'Instant Focus Trigger & Cognitive Refresh',
+      badge: '100% Pure Essential Oil',
       icon: Sparkles,
       color: 'from-purple-400 to-[#0088FF]',
       textColor: 'text-purple-400',
       borderColor: 'border-purple-400',
       bgGlow: 'bg-purple-500/10',
       items: [
-        { name: 'Tıbbi Biberiye (Rosmarinus Officinalis)', detail: 'Asetilkolin seviyesini uyarır' },
-        { name: 'İngiliz Nanesi (Mentha Piperita)', detail: 'Koku duyusu üzerinden anlık uyanıklık' }
+        { name: 'Medicinal Rosemary (Rosmarinus Officinalis)', detail: 'Stimulates acetylcholine levels' },
+        { name: 'English Peppermint (Mentha Piperita)', detail: 'Instant olfactory alertness' }
       ],
-      science: 'Biberiye yağının koklanması ve şakaklara uygulanması, beyinde hafıza bileşeni asetilkolinin parçalanmasını engeller.',
-      brandInfo: 'Art de Huile soğuk sıkım %100 uçucu esansiyel terapi yağı.'
+      science: 'Inhaling and applying rosemary essential oil to temples inhibits the breakdown of memory neurotransmitter acetylcholine.',
+      brandInfo: 'Cold-pressed 100% pure therapeutic grade oil by Art de Huile.'
     },
     qr: {
       id: 'qr',
-      name: 'Neuro-Routine Akıllı QR Kartı',
-      category: 'Dijital Micro-Breathing & Alpha Wave Audio',
-      badge: 'İnteraktif Çalışan Portalı',
+      name: 'Neuro-Routine Smart QR Card',
+      category: 'Digital Micro-Breathing & Alpha Wave Audio',
+      badge: 'Interactive Employee Portal',
       icon: QrCode,
       color: 'from-cyan-400 to-emerald-400',
       textColor: 'text-cyan-400',
       borderColor: 'border-cyan-400',
       bgGlow: 'bg-cyan-500/10',
       items: [
-        { name: '2 Dakikalık Box Breathing Kılavuzu', detail: 'Parasempatik sinir sistemi aktivasyonu' },
-        { name: 'Deep Focus Alpha Binaural Sound Track', detail: '10Hz - 14Hz zihin dalga senkronizasyonu' },
-        { name: 'Günün Biohack İpucu & Mod Takibi', detail: 'Kişisel verimlilik günlüğü' }
+        { name: '2-Minute Box Breathing Guide', detail: 'Parasympathetic nerve activation' },
+        { name: 'Deep Focus Alpha Binaural Sound Track', detail: '10Hz - 14Hz brainwave synchronization' },
+        { name: 'Daily Biohack Tip & Mood Log', detail: 'Personal productivity journal' }
       ],
-      science: 'Vagus sinirini uyararak toplantı ve yoğun kodlama öncesi nabzı düşürür, kortizol seviyesini dakikalar içinde dengeler.',
-      brandInfo: 'Her tepsiye özel basılmış şifreli QR kod ile tüm çalışanların anında erişimi.'
+      science: 'Stimulates the vagus nerve to lower heart rate and normalize cortisol levels in minutes before critical client meetings or coding sprints.',
+      brandInfo: 'Encrypted QR code printed individually on every daily tray.'
     }
   };
 
@@ -128,14 +128,14 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-semibold">
             <Zap className="w-3.5 h-3.5" />
-            <span>Ergonomik Bento Tepsi Anatomisi</span>
+            <span>Ergonomic Bento Tray Anatomy</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Her Gün Masanızda Açılan <br className="hidden sm:inline" />
-            <span className="text-gradient-blue">Biyo-Hacking Kutusu</span>
+            The Daily Biohacking Bento <br className="hidden sm:inline" />
+            <span className="text-gradient-blue">Delivered to Your Desk</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Kendi üretimimiz değil! Tüm dünyada güvenilirliği kanıtlanmış Solgar, Thorne ve Ocean gibi lider markaların kapsülleri ile hazırlanmış mükemmel günlük dozlama.
+            Not made in-house! We source exclusively from world-renowned, certified leaders like Solgar, Thorne, and Ocean to guarantee pristine daily dosage.
           </p>
         </div>
 
@@ -145,8 +145,8 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
           {/* Left Column: Interactive Tray Replica matching User Photo */}
           <div className="lg:col-span-6 bg-[#0B101E] border border-slate-800/80 rounded-3xl p-6 shadow-2xl relative">
             <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 flex items-center justify-between">
-              <span>Bölmelere Tıklayın veya Üzerine Gelin</span>
-              <span className="text-blue-400 text-[11px] bg-blue-950 px-2 py-0.5 rounded font-mono">Canlı Seçim</span>
+              <span>Click or Hover Over Any Compartment</span>
+              <span className="text-blue-400 text-[11px] bg-blue-950 px-2 py-0.5 rounded font-mono">Live Interactive</span>
             </div>
 
             {/* Tray Mold Container */}
@@ -165,11 +165,11 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-[#0088FF]">Bölme 1</span>
+                    <span className="text-xs font-bold text-[#0088FF]">Section 1</span>
                     <Zap className="w-4 h-4 text-[#0088FF]" />
                   </div>
                   <div className="text-sm font-bold text-white mt-1">Lion’s Mane & Rhodiola</div>
-                  <div className="text-[11px] text-slate-400">Nootropik Odak</div>
+                  <div className="text-[11px] text-slate-400">Nootropic Focus</div>
                   <div className="mt-2 text-[10px] text-blue-300 font-mono">Solgar / Venatura</div>
                 </div>
 
@@ -183,11 +183,11 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-cyan-400">Bölme 2</span>
+                    <span className="text-xs font-bold text-cyan-400">Section 2</span>
                     <HeartPulse className="w-4 h-4 text-cyan-400" />
                   </div>
                   <div className="text-sm font-bold text-white mt-1">Omega-3 DHA + B12</div>
-                  <div className="text-[11px] text-slate-400">Hücresel Enerji & ATP</div>
+                  <div className="text-[11px] text-slate-400">Cellular ATP Energy</div>
                   <div className="mt-2 text-[10px] text-cyan-300 font-mono">Ocean Ultra Purified</div>
                 </div>
 
@@ -203,11 +203,11 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-amber-400">Bölme 3</span>
+                  <span className="text-xs font-bold text-amber-400">Section 3</span>
                   <Flame className="w-4 h-4 text-amber-400" />
                 </div>
-                <div className="text-sm font-bold text-white mt-1">Çiğ Datça Bademi, Medjoul Hurması & Yaban Mersini</div>
-                <div className="text-[11px] text-slate-400">Temiz Beyin Glikozu & Antioksidan</div>
+                <div className="text-sm font-bold text-white mt-1">Raw Datça Almonds, Medjoul Date & Blueberries</div>
+                <div className="text-[11px] text-slate-400">Clean Brain Glucose & Anti-oxidants</div>
               </div>
 
               {/* Bottom Compartments */}
@@ -223,11 +223,11 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-purple-400">Bölme 4</span>
+                    <span className="text-xs font-bold text-purple-400">Section 4</span>
                     <Sparkles className="w-4 h-4 text-purple-400" />
                   </div>
                   <div className="text-sm font-bold text-white mt-1">Essential Oil Roll-On</div>
-                  <div className="text-[11px] text-slate-400">Nane & Biberiye Yağı 5ml</div>
+                  <div className="text-[11px] text-slate-400">Peppermint & Rosemary (5ml)</div>
                 </div>
 
                 {/* Compartment: Oxygen Smart Water */}
@@ -240,11 +240,11 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-emerald-400">Bölme 5</span>
+                    <span className="text-xs font-bold text-emerald-400">Section 5</span>
                     <Droplets className="w-4 h-4 text-emerald-400" />
                   </div>
-                  <div className="text-sm font-bold text-white mt-1">Oksijenli Smart Water</div>
-                  <div className="text-[11px] text-slate-400">pH 8.5+ (250ml Şişe)</div>
+                  <div className="text-sm font-bold text-white mt-1">Oxygen Smart Water</div>
+                  <div className="text-[11px] text-slate-400">pH 8.5+ (250ml Bottle)</div>
                 </div>
 
               </div>
@@ -260,9 +260,9 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
               >
                 <div className="flex items-center justify-center gap-2">
                   <QrCode className="w-5 h-5 text-cyan-400" />
-                  <span className="text-xs font-extrabold tracking-wider text-white">HEALTHY ESSENTIALS QR KODU</span>
+                  <span className="text-xs font-extrabold tracking-wider text-white">HEALTHY ESSENTIALS QR CODE</span>
                 </div>
-                <div className="text-[11px] text-slate-400 mt-1">2 Dk Nefes Egzersizi & Alpha Dalga Müziği Portalına Giriş</div>
+                <div className="text-[11px] text-slate-400 mt-1">2-Min Box Breathing & Alpha Waves Focus Portal</div>
               </div>
 
             </div>
@@ -291,7 +291,7 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
 
               {/* Items List */}
               <div className="space-y-3 mb-6">
-                <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">İçerik Bileşenleri:</div>
+                <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">Active Ingredients:</div>
                 {active.items.map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3 bg-[#060913]/60 p-3 rounded-xl border border-slate-800/60">
                     <CheckCircle2 className={`w-5 h-5 ${active.textColor} shrink-0 mt-0.5`} />
@@ -307,7 +307,7 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
               <div className="p-4 rounded-2xl bg-blue-950/30 border border-blue-900/40 mb-6">
                 <div className="flex items-center gap-2 text-xs font-bold text-blue-400 mb-1">
                   <Zap className="w-4 h-4" />
-                  <span>Biyolojik Etki Mekanizması:</span>
+                  <span>Biological Mechanism:</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   {active.science}
@@ -317,7 +317,7 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
               {/* Brand Quality Guarantee */}
               <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-300">
                 <Award className="w-5 h-5 text-yellow-400 shrink-0" />
-                <span><strong>Kalite Standardı:</strong> {active.brandInfo}</span>
+                <span><strong>Quality Standard:</strong> {active.brandInfo}</span>
               </div>
 
               {/* Interactive QR Button if QR tab active */}
@@ -327,7 +327,7 @@ export const TrayAnatomy = ({ onOpenQrModal }) => {
                   className="mt-6 w-full py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-cyan-500 to-[#0088FF] shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-all cursor-pointer"
                 >
                   <QrCode className="w-4 h-4" />
-                  <span>Sitede QR Nefes Ritüelini Test Et</span>
+                  <span>Test QR Breathing Routine Demo</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               )}

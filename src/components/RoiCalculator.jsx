@@ -11,12 +11,12 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
   const weeklyFocusHoursSaved = Math.round(employeeCount * dailyFocusGainPerPerson * daysPerWeek);
   const monthlyFocusHoursSaved = Math.round(weeklyFocusHoursSaved * 4.2);
 
-  // Estimated monetary value of saved time (Average tech/corporate hourly rate ~ ₺450)
-  const averageHourlyCost = 450;
+  // Estimated monetary value of saved time (Average corporate hourly rate ~$35 / ₺450)
+  const averageHourlyCost = 35;
   const monthlyMonetaryValue = Math.round(monthlyFocusHoursSaved * averageHourlyCost);
   
-  // Estimated NeuroBite Cost per employee per month (~ ₺1,800 for 5 days)
-  const monthlyNeuroBiteCostPerPerson = daysPerWeek === 5 ? 1800 : 1200;
+  // Estimated NeuroBite Cost per employee per month (~ $50 / ₺1,800 for 5 days)
+  const monthlyNeuroBiteCostPerPerson = daysPerWeek === 5 ? 50 : 35;
   const totalMonthlyCost = employeeCount * monthlyNeuroBiteCostPerPerson;
   const netMonthlyGain = monthlyMonetaryValue - totalMonthlyCost;
   const roiRatio = (monthlyMonetaryValue / Math.max(totalMonthlyCost, 1)).toFixed(1);
@@ -33,14 +33,14 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-800/50 text-[#0088FF] text-xs font-semibold">
             <Calculator className="w-3.5 h-3.5" />
-            <span>İK ve Finans Yöneticileri İçin Canlı Simülatör</span>
+            <span>Live Productivity Simulator for HR & Leaders</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            NeuroBite Şirketinize <br className="hidden sm:inline" />
-            <span className="text-gradient-blue">Ne Kadar Kazandırır?</span>
+            How Much Can NeuroBite <br className="hidden sm:inline" />
+            <span className="text-gradient-blue">Save Your Enterprise?</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Çalışan sayısı ve haftalık teslimat gününüzü kaydırın; şirketinizin kazanacağı ekstra odak saatini ve tahmini maliyet getirisini anında görün.
+            Adjust team headcount and weekly delivery frequency to instantly calculate saved focus hours and estimated monetary ROI.
           </p>
         </div>
 
@@ -57,10 +57,10 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
                 <div className="flex items-center justify-between">
                   <label className="text-sm font-bold text-slate-200 flex items-center gap-2">
                     <Users className="w-4 h-4 text-[#0088FF]" />
-                    <span>Şirket / Ekip Çalışan Sayısı:</span>
+                    <span>Team / Company Headcount:</span>
                   </label>
                   <span className="text-2xl font-black text-[#0088FF] bg-blue-950 px-4 py-1 rounded-xl border border-blue-800">
-                    {employeeCount} Kişi
+                    {employeeCount} People
                   </span>
                 </div>
 
@@ -75,10 +75,10 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
                 />
 
                 <div className="flex justify-between text-[11px] text-slate-500 font-mono">
-                  <span>5 Çalışan</span>
-                  <span>50 Kişi</span>
-                  <span>100 Kişi</span>
-                  <span>250+ Kişi</span>
+                  <span>5 Staff</span>
+                  <span>50 Team</span>
+                  <span>100 Staff</span>
+                  <span>250+ Enterprise</span>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
               <div className="space-y-3">
                 <label className="text-sm font-bold text-slate-200 flex items-center gap-2">
                   <Clock className="w-4 h-4 text-cyan-400" />
-                  <span>Haftalık Teslimat Sıklığı:</span>
+                  <span>Weekly Delivery Frequency:</span>
                 </label>
 
                 <div className="grid grid-cols-2 gap-3">
@@ -98,7 +98,7 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
                         : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700'
                     }`}
                   >
-                    Haftada 3 Gün (Yoğun Günler)
+                    3 Days/Week (Peak Days)
                   </button>
 
                   <button
@@ -109,7 +109,7 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
                         : 'bg-slate-900 text-slate-400 border-slate-800 hover:border-slate-700'
                     }`}
                   >
-                    Haftada 5 Gün (Tam Kurumsal)
+                    5 Days/Week (Full Corporate)
                   </button>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
               {/* Micro guarantee badge */}
               <div className="flex items-center gap-2 text-xs text-slate-400 pt-2 border-t border-slate-800/80">
                 <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Hesaplamalar 1.2 saat/gün ortalama derin odak artışına dayanır.</span>
+                <span>Calculations based on 1.2 hours/day avg deep focus gain per employee.</span>
               </div>
 
             </div>
@@ -126,37 +126,37 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
             <div className="lg:col-span-6 bg-[#060A14] p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
               
               <div className="text-xs font-extrabold uppercase tracking-widest text-cyan-400 flex items-center justify-between">
-                <span>Tahmini Aylık Performans Getirisi</span>
+                <span>Estimated Monthly Value Gain</span>
                 <span className="px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-bold">
-                  {roiRatio}x ROI Oranı
+                  {roiRatio}x ROI Ratio
                 </span>
               </div>
 
               {/* Saved Focus Hours Big Metric */}
               <div className="p-4 rounded-2xl bg-blue-950/40 border border-blue-900/60">
-                <div className="text-xs text-slate-400 mb-1">Aylık Kazanılan Ekstra Odak Süresi</div>
+                <div className="text-xs text-slate-400 mb-1">Monthly Saved Deep Focus Hours</div>
                 <div className="text-4xl font-black text-white flex items-baseline gap-2">
                   <span>+{monthlyFocusHoursSaved}</span>
-                  <span className="text-lg font-normal text-blue-400">Saat / Ay</span>
+                  <span className="text-lg font-normal text-blue-400">Hours / Month</span>
                 </div>
                 <div className="text-[11px] text-slate-400 mt-1">
-                  (Ekibiniz yılda yaklaşık <strong>{monthlyFocusHoursSaved * 12} saat</strong> daha az zihinsel sis yaşar)
+                  (Your team gains approx <strong>{monthlyFocusHoursSaved * 12} hours</strong> of focus per year)
                 </div>
               </div>
 
               {/* Financial Value Metric */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                  <div className="text-[11px] text-slate-400">Kazanılan Zaman Değeri</div>
+                  <div className="text-[11px] text-slate-400">Time Value Saved</div>
                   <div className="text-xl font-extrabold text-emerald-400 mt-1">
-                    ₺{monthlyMonetaryValue.toLocaleString('tr-TR')}
+                    ${monthlyMonetaryValue.toLocaleString()}
                   </div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-slate-900 border border-slate-800">
-                  <div className="text-[11px] text-slate-400">Net Aylık Şirket Karı</div>
+                  <div className="text-[11px] text-slate-400">Net Monthly Gain</div>
                   <div className="text-xl font-extrabold text-cyan-400 mt-1">
-                    ₺{netMonthlyGain.toLocaleString('tr-TR')}
+                    ${netMonthlyGain.toLocaleString()}
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export const RoiCalculator = ({ onOpenSampleModal }) => {
                 onClick={onOpenSampleModal}
                 className="w-full py-4 rounded-xl font-bold text-xs tracking-wide text-white bg-gradient-to-r from-[#0088FF] to-cyan-500 hover:from-blue-600 hover:to-[#0088FF] shadow-[0_0_25px_rgba(0,136,255,0.4)] transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>{employeeCount} Kişilik Şirket İçin Numune İste</span>
+                <span>Request Sample for {employeeCount} Staff</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 

@@ -34,11 +34,11 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
 
           {/* Desktop Nav Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="#kutu-anatomisi" className="hover:text-[#0088FF] transition-colors py-1">Kutu Anatomisi</a>
-            <a href="#neden-neurobite" className="hover:text-[#0088FF] transition-colors py-1">Neden NeuroBite?</a>
-            <a href="#roi-hesaplayici" className="hover:text-[#0088FF] transition-colors py-1">ROI Hesaplayıcı</a>
-            <a href="#paketler" className="hover:text-[#0088FF] transition-colors py-1">Paketler & Fiyatlama</a>
-            <a href="#kalite-ve-teslimat" className="hover:text-[#0088FF] transition-colors py-1">Kalite & Lojistik</a>
+            <a href="#kutu-anatomisi" className="hover:text-[#0088FF] transition-colors py-1">Tray Anatomy</a>
+            <a href="#neden-neurobite" className="hover:text-[#0088FF] transition-colors py-1">Why NeuroBite?</a>
+            <a href="#roi-hesaplayici" className="hover:text-[#0088FF] transition-colors py-1">ROI Calculator</a>
+            <a href="#paketler" className="hover:text-[#0088FF] transition-colors py-1">Plans & Pricing</a>
+            <a href="#kalite-ve-teslimat" className="hover:text-[#0088FF] transition-colors py-1">Quality & Logistics</a>
           </nav>
 
           {/* Actions */}
@@ -48,7 +48,7 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
               className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-cyan-400 bg-cyan-950/40 hover:bg-cyan-900/60 border border-cyan-800/50 rounded-xl transition-all hover:scale-[1.02] cursor-pointer"
             >
               <QrIcon className="w-4 h-4" />
-              <span>QR Ritüeli Demo</span>
+              <span>Live QR Demo</span>
             </button>
 
             <button
@@ -56,7 +56,7 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
               className="relative group overflow-hidden px-5 py-2.5 rounded-xl font-bold text-xs tracking-wide text-white bg-gradient-to-r from-[#0088FF] to-blue-600 hover:from-blue-600 hover:to-[#0088FF] transition-all duration-300 shadow-[0_0_20px_rgba(0,136,255,0.4)] hover:shadow-[0_0_30px_rgba(0,136,255,0.7)] hover:scale-[1.03] cursor-pointer"
             >
               <span className="relative z-10 flex items-center gap-2">
-                <span>Ücretsiz Numune İste</span>
+                <span>Request Free Sample</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
@@ -68,7 +68,7 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
               onClick={onOpenSampleModal}
               className="px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0088FF]"
             >
-              Numune Al
+              Get Sample
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -89,35 +89,35 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
             onClick={() => setMobileMenuOpen(false)}
             className="block text-slate-200 font-medium hover:text-[#0088FF] py-2 border-b border-slate-800/50"
           >
-            Kutu Anatomisi
+            Tray Anatomy
           </a>
           <a
             href="#neden-neurobite"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-slate-200 font-medium hover:text-[#0088FF] py-2 border-b border-slate-800/50"
           >
-            Neden NeuroBite?
+            Why NeuroBite?
           </a>
           <a
             href="#roi-hesaplayici"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-slate-200 font-medium hover:text-[#0088FF] py-2 border-b border-slate-800/50"
           >
-            ROI Hesaplayıcı
+            ROI Calculator
           </a>
           <a
             href="#paketler"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-slate-200 font-medium hover:text-[#0088FF] py-2 border-b border-slate-800/50"
           >
-            Paketler
+            Plans & Pricing
           </a>
           <a
             href="#kalite-ve-teslimat"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-slate-200 font-medium hover:text-[#0088FF] py-2"
           >
-            Kalite & Teslimat
+            Quality & Logistics
           </a>
 
           <div className="pt-2 flex flex-col gap-3">
@@ -126,13 +126,13 @@ export const Navbar = ({ onOpenSampleModal, onOpenQrModal }) => {
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-semibold text-cyan-400 bg-cyan-950/60 border border-cyan-800/50"
             >
               <QrIcon className="w-4 h-4" />
-              <span>QR Ritüeli Demo</span>
+              <span>Live QR Demo</span>
             </button>
             <button
               onClick={() => { setMobileMenuOpen(false); onOpenSampleModal(); }}
               className="w-full py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#0088FF] to-blue-600 shadow-[0_0_20px_rgba(0,136,255,0.4)]"
             >
-              Ücretsiz Şirket Numunesi İste
+              Request Free Company Sample
             </button>
           </div>
         </div>

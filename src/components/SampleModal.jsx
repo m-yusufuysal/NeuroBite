@@ -11,7 +11,7 @@ export const SampleModal = ({ isOpen, onClose }) => {
     email: '',
     phone: '',
     employeeCount: '10-25',
-    city: 'İstanbul',
+    city: 'New York / HQ',
     dietary: []
   });
 
@@ -59,10 +59,10 @@ export const SampleModal = ({ isOpen, onClose }) => {
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Ücretsiz Şirket Numune Kutusu İste
+                  Request Free Corporate Sample Box
                 </h3>
                 <p className="text-xs text-slate-400">
-                  10+ çalışanı olan firmalara özel 1 haftalık deneme bento kitinizi adresinize gönderelim.
+                  Exclusive 1-week trial bento kit delivered to companies with 10+ employees.
                 </p>
               </div>
             </div>
@@ -72,13 +72,13 @@ export const SampleModal = ({ isOpen, onClose }) => {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Şirket Adı *</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Company Name *</label>
                   <div className="relative">
                     <Building2 className="w-4 h-4 text-slate-500 absolute left-3 top-3" />
                     <input
                       type="text"
                       required
-                      placeholder="Örn: Acme Teknoloji A.Ş."
+                      placeholder="e.g. Acme Tech Inc."
                       value={formData.companyName}
                       onChange={(e) => setFormData({...formData, companyName: e.target.value})}
                       className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-[#0088FF] focus:outline-none"
@@ -87,13 +87,13 @@ export const SampleModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Yetkili Adı & Unvanı *</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Contact Name & Title *</label>
                   <div className="relative">
                     <User className="w-4 h-4 text-slate-500 absolute left-3 top-3" />
                     <input
                       type="text"
                       required
-                      placeholder="Örn: Ayşe Yılmaz (İK Müdürü)"
+                      placeholder="e.g. Jane Doe (Head of People)"
                       value={formData.fullName}
                       onChange={(e) => setFormData({...formData, fullName: e.target.value})}
                       className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-[#0088FF] focus:outline-none"
@@ -104,13 +104,13 @@ export const SampleModal = ({ isOpen, onClose }) => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Kurumsal E-posta *</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Corporate Email *</label>
                   <div className="relative">
                     <Mail className="w-4 h-4 text-slate-500 absolute left-3 top-3" />
                     <input
                       type="email"
                       required
-                      placeholder="isim@sirketiniz.com"
+                      placeholder="name@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-[#0088FF] focus:outline-none"
@@ -119,11 +119,11 @@ export const SampleModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Telefon No *</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Phone Number *</label>
                   <input
                     type="tel"
                     required
-                    placeholder="0532 000 00 00"
+                    placeholder="+1 (555) 000-0000"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     className="w-full px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:border-[#0088FF] focus:outline-none"
@@ -133,41 +133,41 @@ export const SampleModal = ({ isOpen, onClose }) => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Çalışan Sayısı</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Team Headcount</label>
                   <select
                     value={formData.employeeCount}
                     onChange={(e) => setFormData({...formData, employeeCount: e.target.value})}
                     className="w-full px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-[#0088FF] focus:outline-none"
                   >
-                    <option value="10-25">10 - 25 Çalışan</option>
-                    <option value="25-50">25 - 50 Çalışan</option>
-                    <option value="50-100">50 - 100 Çalışan</option>
-                    <option value="100+">100+ Holding / Kurumsal</option>
+                    <option value="10-25">10 - 25 Staff</option>
+                    <option value="25-50">25 - 50 Staff</option>
+                    <option value="50-100">50 - 100 Staff</option>
+                    <option value="100+">100+ Enterprise / Global</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Teslimat Şehri</label>
+                  <label className="text-xs font-bold text-slate-300 block mb-1">Delivery City / HQ</label>
                   <select
                     value={formData.city}
                     onChange={(e) => setFormData({...formData, city: e.target.value})}
                     className="w-full px-3 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white focus:border-[#0088FF] focus:outline-none"
                   >
-                    <option value="İstanbul">İstanbul (Tüm İlçeler)</option>
-                    <option value="Ankara">Ankara</option>
-                    <option value="İzmir">İzmir</option>
-                    <option value="Kocaeli">Kocaeli / Gebze Teknopark</option>
-                    <option value="Bursa">Bursa</option>
-                    <option value="Diğer">Diğer Şehirler</option>
+                    <option value="Istanbul">Istanbul (All Districts)</option>
+                    <option value="London">London / UK</option>
+                    <option value="New York">New York / USA</option>
+                    <option value="Berlin">Berlin / EU</option>
+                    <option value="Dubai">Dubai / UAE</option>
+                    <option value="Other">Other Metro Locations</option>
                   </select>
                 </div>
               </div>
 
               {/* Dietary check badges */}
               <div>
-                <label className="text-xs font-bold text-slate-300 block mb-2">Özel Diyet / Alerjen Tercihleri:</label>
+                <label className="text-xs font-bold text-slate-300 block mb-2">Dietary & Allergen Preferences:</label>
                 <div className="flex flex-wrap gap-2">
-                  {['Vejetaryen / Vegan', 'Glutensiz', 'Kafeinsiz Kapsül', 'Fındık Alerjisi'].map((item) => (
+                  {['Vegetarian / Vegan', 'Gluten-Free', 'Caffeine-Free', 'Nut-Free'].map((item) => (
                     <button
                       type="button"
                       key={item}
@@ -189,7 +189,7 @@ export const SampleModal = ({ isOpen, onClose }) => {
                 className="w-full py-4 mt-2 rounded-xl font-bold text-xs tracking-wide text-white bg-gradient-to-r from-[#0088FF] via-blue-600 to-cyan-500 hover:from-blue-600 hover:to-[#0088FF] shadow-[0_0_25px_rgba(0,136,255,0.4)] transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
-                <span>Ücretsiz Numune Talebini Gönder</span>
+                <span>Submit Free Sample Request</span>
               </button>
 
             </form>
@@ -202,21 +202,21 @@ export const SampleModal = ({ isOpen, onClose }) => {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-2xl font-black text-white">Talebiniz Başarıyla Alındı!</h3>
+              <h3 className="text-2xl font-black text-white">Sample Request Confirmed!</h3>
               <p className="text-sm text-slate-300 max-w-md mx-auto">
-                Sayın <strong>{formData.fullName}</strong>, <strong>{formData.companyName}</strong> için 1 haftalık NeuroBite numune kutunuz hazırlanıyor.
+                Dear <strong>{formData.fullName}</strong>, your 1-week NeuroBite trial kit for <strong>{formData.companyName}</strong> is being prepared.
               </p>
             </div>
 
             <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 text-xs text-slate-400 max-w-sm mx-auto font-mono">
-              Kurumsal uzmanımız 24 saat içinde <strong>{formData.email}</strong> adresi üzerinden sizinle iletişime geçecektir.
+              Our corporate specialist will reach out to <strong>{formData.email}</strong> within 24 hours.
             </div>
 
             <button
               onClick={onClose}
               className="px-8 py-3 rounded-xl font-bold text-xs text-white bg-[#0088FF] hover:bg-blue-600 shadow-lg cursor-pointer"
             >
-              Tamamdır
+              Done
             </button>
           </div>
         )}

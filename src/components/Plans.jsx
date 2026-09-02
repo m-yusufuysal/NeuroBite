@@ -11,14 +11,14 @@ export const Plans = ({ onOpenSampleModal }) => {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-800/50 text-[#0088FF] text-xs font-semibold">
             <Building2 className="w-3.5 h-3.5" />
-            <span>Şirket Boyutunuza Uygun Esnek Abonelikler</span>
+            <span>Tailored Corporate Subscription Plans</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Kurumsal Performans <br className="hidden sm:inline" />
-            <span className="text-gradient-blue">Abonelik Paketleri</span>
+            Corporate Cognitive <br className="hidden sm:inline" />
+            <span className="text-gradient-blue">Subscription Tiers</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Taahhütsüz, istediğiniz zaman dondurulabilir veya güncellenebilir haftalık teslimat planları.
+            Flexible weekly delivery plans with zero long-term lock-in. Pause, upgrade, or cancel anytime.
           </p>
         </div>
 
@@ -29,33 +29,33 @@ export const Plans = ({ onOpenSampleModal }) => {
           <div className="glass-panel p-8 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-600 transition-all">
             <div>
               <div className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-2">
-                Haftada 3 Gün
+                3 Days / Week
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Neuro-Starter</h3>
               <p className="text-xs text-slate-400 mb-6">
-                En yoğun Salı - Çarşamba - Perşembe iş günleri için ideal başlangıç paketi.
+                Ideal starter package for peak workdays (Tuesday, Wednesday, Thursday).
               </p>
 
               <div className="space-y-3 mb-8 text-xs text-slate-300">
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-[#0088FF] shrink-0" />
-                  <span>Günlük Nootropik Kapsül (Lion’s Mane)</span>
+                  <span>Daily Nootropic Capsule (Lion’s Mane & Rhodiola)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-[#0088FF] shrink-0" />
-                  <span>Oksijenli Alkalin Smart Water (250ml)</span>
+                  <span>Oxygenated Alkaline Smart Water (250ml)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-[#0088FF] shrink-0" />
-                  <span>Bio-Snack Bölmesi (Badem & Hurma)</span>
+                  <span>Bio-Snack Compartment (Almonds & Date)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-[#0088FF] shrink-0" />
-                  <span>QR Nefes & Odak Portal Erişimi</span>
+                  <span>QR Breathing & Focus Portal Access</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-[#0088FF] shrink-0" />
-                  <span>Saat 08:30 Şirket Buzdolabı Teslimatı</span>
+                  <span>08:30 AM Office Fridge Cold Delivery</span>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ export const Plans = ({ onOpenSampleModal }) => {
               onClick={onOpenSampleModal}
               className="w-full py-3.5 rounded-xl font-bold text-xs text-slate-200 glass-panel hover:bg-slate-800 border border-slate-700 transition-all cursor-pointer"
             >
-              Starter Paketi İncele
+              Explore Starter Plan
             </button>
           </div>
 
@@ -73,38 +73,38 @@ export const Plans = ({ onOpenSampleModal }) => {
             
             {/* Badge */}
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-[#0088FF] to-cyan-400 text-white font-extrabold text-[11px] tracking-wider uppercase shadow-lg">
-              En Çok Tercih Edilen
+              Most Popular Tier
             </div>
 
             <div>
               <div className="text-xs font-extrabold uppercase tracking-widest text-[#0088FF] mb-2 pt-2">
-                Haftada 5 Gün (Tam Destek)
+                5 Days / Week (Full Support)
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Neuro-Pro</h3>
               <p className="text-xs text-slate-300 mb-6">
-                Pazartesi - Cuma tüm haftayı kapsayan tam zihinsel performans protokolü.
+                Complete Monday to Friday daily cognitive performance protocol.
               </p>
 
               <div className="space-y-3 mb-8 text-xs text-slate-200">
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span><strong>Tüm Starter Bileşenleri (5 Gün)</strong></span>
+                  <span><strong>All Starter Components (5 Days/Week)</strong></span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span>Omega-3 DHA + CoQ10 & B12 Hücresel Desteği</span>
+                  <span>Omega-3 DHA + CoQ10 & B12 Cellular Complex</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span>Art de Huile Aromaterapi Roll-On (Haftalık)</span>
+                  <span>Art de Huile Aromatherapy Roll-On (Weekly)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span>Çalışan Diyet Seçenekleri (Vegan/Glutensiz)</span>
+                  <span>Dietary Customization (Vegan/Gluten-Free)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span>Aylık İK Verimlilik & Kullanım Raporu</span>
+                  <span>Monthly HR Productivity Analytics Report</span>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export const Plans = ({ onOpenSampleModal }) => {
               onClick={onOpenSampleModal}
               className="w-full py-4 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-[#0088FF] to-cyan-500 hover:from-blue-600 hover:to-[#0088FF] shadow-[0_0_20px_rgba(0,136,255,0.4)] transition-all cursor-pointer flex items-center justify-center gap-2"
             >
-              <span>Pro Paket İçin Teklif Al</span>
+              <span>Get Quote for Pro Plan</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -122,29 +122,29 @@ export const Plans = ({ onOpenSampleModal }) => {
           <div className="glass-panel p-8 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-600 transition-all">
             <div>
               <div className="text-xs font-extrabold uppercase tracking-widest text-amber-400 mb-2">
-                50+ Çalışan Kurumsal
+                50+ Employees Enterprise
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Neuro-VIP Enterprise</h3>
               <p className="text-xs text-slate-400 mb-6">
-                Büyük ölçekli firmalar ve holdingler için özel marka entegrasyonu ve dozajlama.
+                Custom branded bento trays, medical advisory dosage, and personalized team surveys.
               </p>
 
               <div className="space-y-3 mb-8 text-xs text-slate-300">
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Şirket Logonuzla Özel Baskılı Bento Tepsileri</span>
+                  <span>Custom Logo Branded Bento Trays</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Doktor & Diyetisyen Denetimli Kişisel Ankete Göre Dozaj</span>
+                  <span>Doctor & Nutritionist Guided Personalization</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Özel VIP Soğuk Teslimat Ekibi</span>
+                  <span>Dedicated VIP Cold Delivery Fleet</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Özel İK Dashboard Entegrasyonu</span>
+                  <span>Dedicated HR Portal Integration</span>
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@ export const Plans = ({ onOpenSampleModal }) => {
               onClick={onOpenSampleModal}
               className="w-full py-3.5 rounded-xl font-bold text-xs text-amber-300 glass-panel hover:bg-slate-800 border border-amber-900/50 transition-all cursor-pointer"
             >
-              Kurumsal Görüşme Randevusu Al
+              Schedule Enterprise Consultation
             </button>
           </div>
 

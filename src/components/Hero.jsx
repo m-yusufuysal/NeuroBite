@@ -25,14 +25,14 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-950/60 border border-blue-800/40 text-blue-400 text-xs font-semibold tracking-wide backdrop-blur-md shadow-[0_0_15px_rgba(0,136,255,0.2)]">
               <span className="flex h-2 w-2 rounded-full bg-[#0088FF] animate-ping" />
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>B2B Kurumsal Biohacking & Zihinsel Performans Platformu</span>
+              <span>B2B Corporate Biohacking & Cognitive Performance Platform</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-              Şirketinizin En Değerli Varlığı İçin <br className="hidden sm:inline" />
+              Daily Cognitive Fuel for <br className="hidden sm:inline" />
               <span className="text-gradient-blue relative inline-block">
-                Zihinsel Yakıt Kutusu
+                High-Performing Teams
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-[#0088FF]/40" viewBox="0 0 100 20" preserveAspectRatio="none">
                   <path d="M0 15 Q 50 0, 100 15" stroke="currentColor" strokeWidth="4" fill="none" />
                 </svg>
@@ -41,22 +41,22 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Çalışanlarınızın odağını artıran, zihinsel sisi dağıtan ve öğleden sonra çöküşünü engelleyen günlük <strong className="text-white font-semibold">NeuroBite Bento Tepsileri</strong>. Dünyaca ünlü sertifikalı markaların vitamin, nootropik, süper gıda ve hidrasyon ürünleri her sabah masalarında!
+              Elevate team focus, eliminate afternoon fatigue, and boost productivity with daily pre-portioned <strong className="text-white font-semibold">NeuroBite Bento Trays</strong>. Featuring top-tier supplements (Solgar, Thorne, Ocean), organic bio-snacks, essential oils, and oxygenated smart water delivered to your office every morning!
             </p>
 
             {/* Key Metrics Pill Badges */}
             <div className="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0">
               <div className="glass-panel p-3 rounded-2xl border border-slate-800 text-center">
                 <div className="text-2xl sm:text-3xl font-black text-[#0088FF]">+34%</div>
-                <div className="text-[11px] font-medium text-slate-400 mt-1">Zihinsel Odaklanma</div>
+                <div className="text-[11px] font-medium text-slate-400 mt-1">Deep Work Focus</div>
               </div>
               <div className="glass-panel p-3 rounded-2xl border border-slate-800 text-center">
                 <div className="text-2xl sm:text-3xl font-black text-cyan-400">0%</div>
-                <div className="text-[11px] font-medium text-slate-400 mt-1">Saat 15:00 Yorgunluğu</div>
+                <div className="text-[11px] font-medium text-slate-400 mt-1">3 PM Slump Fatigue</div>
               </div>
               <div className="glass-panel p-3 rounded-2xl border border-slate-800 text-center">
                 <div className="text-2xl sm:text-3xl font-black text-emerald-400">08:30</div>
-                <div className="text-[11px] font-medium text-slate-400 mt-1">Soğuk Teslimat</div>
+                <div className="text-[11px] font-medium text-slate-400 mt-1">Cold Chain Delivery</div>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                 className="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm tracking-wide text-white bg-gradient-to-r from-[#0088FF] via-blue-600 to-cyan-500 hover:from-blue-600 hover:to-[#0088FF] shadow-[0_0_35px_rgba(0,136,255,0.5)] hover:shadow-[0_0_50px_rgba(0,136,255,0.8)] transition-all duration-300 hover:scale-[1.03] cursor-pointer flex items-center justify-center gap-3"
               >
                 <Zap className="w-5 h-5 text-yellow-300 fill-yellow-300" />
-                <span>10+ Kişilik Şirketin İçin Ücretsiz Numune Al</span>
+                <span>Get Free Sample Kit (10+ Employees)</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
@@ -76,7 +76,7 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                 className="w-full sm:w-auto px-6 py-4 rounded-2xl font-semibold text-sm text-slate-200 glass-panel hover:bg-slate-800/80 border border-slate-700/80 transition-all hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Play className="w-4 h-4 text-[#0088FF] fill-[#0088FF]" />
-                <span>Kutuyu İnteraktif İncele</span>
+                <span>Explore Bento Tray</span>
               </a>
             </div>
 
@@ -84,15 +84,15 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4 text-xs font-medium text-slate-400">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Solgar, Thorne, Ocean Markaları</span>
+                <span>Solgar, Thorne & Ocean Certified</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Tarım Bakanlığı Onaylı Güvenilir Dozlama</span>
+                <span>FDA & Health Ministry Compliant</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>Taahhütsüz İptal Esnekliği</span>
+                <span>Flexible Cancel Anytime</span>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                 {/* Floating Live Status Badge */}
                 <div className="absolute -top-4 -right-4 z-20 glass-panel px-4 py-2 rounded-2xl border border-cyan-500/40 shadow-xl flex items-center gap-2 bg-[#0C1427]/95">
                   <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-xs font-bold text-slate-100">Günlük Soğuk Zincir Tepsi</span>
+                  <span className="text-xs font-bold text-slate-100">Daily Cold Chain Tray</span>
                 </div>
 
                 {/* Logo Banner on Tray */}
@@ -127,11 +127,11 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                   {/* Compartment 1: Lion's Mane & Nootropics */}
                   <div className="glass-panel p-4 rounded-2xl border border-blue-900/40 hover:border-[#0088FF] transition-all bg-[#111827]/80 group/item">
                     <div className="text-xs font-bold text-blue-400 mb-1 flex items-center justify-between">
-                      <span>Nootropik Tablet</span>
+                      <span>Nootropic Tablet</span>
                       <span className="w-2 h-2 rounded-full bg-[#0088FF]"></span>
                     </div>
                     <div className="text-sm font-bold text-white">Lion's Mane & Rhodiola</div>
-                    <div className="text-[11px] text-slate-400 mt-1">Zihinsel Odak & Berraklık</div>
+                    <div className="text-[11px] text-slate-400 mt-1">Mental Focus & Clarity</div>
                     <div className="mt-2 text-[10px] inline-block px-2 py-0.5 rounded bg-blue-950 text-blue-300 font-mono">
                       Solgar / Thorne
                     </div>
@@ -140,11 +140,11 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                   {/* Compartment 2: Omega 3 & B12 */}
                   <div className="glass-panel p-4 rounded-2xl border border-cyan-900/40 hover:border-cyan-400 transition-all bg-[#111827]/80">
                     <div className="text-xs font-bold text-cyan-400 mb-1 flex items-center justify-between">
-                      <span>Hücresel Enerji</span>
+                      <span>Cellular Energy</span>
                       <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
                     </div>
                     <div className="text-sm font-bold text-white">Omega-3 DHA + B12</div>
-                    <div className="text-[11px] text-slate-400 mt-1">Hücre Koruma & ATP</div>
+                    <div className="text-[11px] text-slate-400 mt-1">ATP Energy & Brain Protection</div>
                     <div className="mt-2 text-[10px] inline-block px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 font-mono">
                       Ocean Ultra Purified
                     </div>
@@ -156,21 +156,21 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                       <span>Bio-Snacks</span>
                       <span className="w-2 h-2 rounded-full bg-amber-400"></span>
                     </div>
-                    <div className="text-sm font-bold text-white">Çiğ Badem & Medjoul</div>
-                    <div className="text-[11px] text-slate-400 mt-1">Doğal Glikoz Dengesi</div>
+                    <div className="text-sm font-bold text-white">Raw Almonds & Medjoul</div>
+                    <div className="text-[11px] text-slate-400 mt-1">Steady Glucose Fuel</div>
                     <div className="mt-2 text-[10px] inline-block px-2 py-0.5 rounded bg-amber-950 text-amber-300 font-mono">
-                      Datça Çiftliği
+                      Datça Farm Organic
                     </div>
                   </div>
 
                   {/* Compartment 4: Smart Water & Essential Oil */}
                   <div className="glass-panel p-4 rounded-2xl border border-emerald-900/40 hover:border-emerald-400 transition-all bg-[#111827]/80">
                     <div className="text-xs font-bold text-emerald-400 mb-1 flex items-center justify-between">
-                      <span>Hidrasyon & Aromaterapi</span>
+                      <span>Hydration & Therapy</span>
                       <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                     </div>
-                    <div className="text-sm font-bold text-white">Oksijenli Su + Nane Yağı</div>
-                    <div className="text-[11px] text-slate-400 mt-1">pH 8.5+ & Ferahlık</div>
+                    <div className="text-sm font-bold text-white">Oxygen Water + Peppermint</div>
+                    <div className="text-[11px] text-slate-400 mt-1">pH 8.5+ & Freshness</div>
                     <div className="mt-2 text-[10px] inline-block px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 font-mono">
                       Art de Huile Roll-on
                     </div>
@@ -191,11 +191,11 @@ export const Hero = ({ onOpenSampleModal, onOpenQrModal }) => {
                       <div className="text-xs font-bold text-white group-hover/qr:text-cyan-400 transition-colors">
                         HEALTHY ESSENTIALS QR
                       </div>
-                      <div className="text-[10px] text-slate-400">Günün 2 Dk Nefes & Alpha Sound Ritüeli</div>
+                      <div className="text-[10px] text-slate-400">2-Min Box Breathing & Alpha Waves</div>
                     </div>
                   </div>
                   <span className="text-[11px] font-bold text-[#0088FF] group-hover/qr:translate-x-1 transition-transform">
-                    Test Et &rarr;
+                    Test Demo &rarr;
                   </span>
                 </div>
 
