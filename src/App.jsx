@@ -26,7 +26,7 @@ function Navbar({ onSample, onQr }) {
       <div className={`max-w-7xl mx-auto transition-all duration-500 ${scrolled ? 'bg-[#06080F]/80 backdrop-blur-2xl border border-white/[0.04] rounded-2xl shadow-2xl shadow-black/30 mx-4 lg:mx-auto px-6 py-2' : 'px-6'}`}>
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
-            <img src={`${BASE}logo.png`} alt="NeuroBite" className="h-12 w-12 rounded-xl object-cover transition-transform duration-500 group-hover:scale-110 shadow-lg shadow-[#0088FF]/10" />
+            <img src={`${BASE}logo.png`} alt="NeuroBite" className="h-14 w-14 rounded-xl object-cover transition-transform duration-500 group-hover:scale-110 shadow-[0_0_20px_rgba(0,136,255,0.25)]" />
             <span className="text-xl font-bold tracking-[0.12em] text-white uppercase hidden sm:block">Neuro<span className="text-[#0088FF]">Bite</span></span>
           </a>
 
@@ -183,7 +183,7 @@ function ProductShowcase({ onQr }) {
   const items = [
     { label: 'Nootropic Stack', icon: <Brain className="w-5 h-5" />, color: '#0088FF', title: "Lion's Mane + Rhodiola Rosea", detail: 'Stimulates Nerve Growth Factor (NGF) for neural regeneration. Rhodiola blocks cortisol to sustain deep work. Two capsules, pharmaceutical-grade.', brand: 'Solgar · Venatura', dose: '500mg + 200mg' },
     { label: 'Cellular Energy', icon: <HeartPulse className="w-5 h-5" />, color: '#06B6D4', title: 'Omega-3 DHA + CoQ10 + B12', detail: 'Rebuilds brain cell membranes with ultra-purified DHA. CoQ10 powers mitochondrial ATP production. B12 methylcobalamin for neurotransmitter synthesis.', brand: 'Ocean Plus · Thorne', dose: '600mg + 100mg + 1000mcg' },
-    { label: 'Bio-Snack Fuel', icon: <Flame className="w-5 h-5" />, color: '#F59E0B', title: 'Raw Almonds · Medjool Date · Blueberries', detail: 'Slow-release glucose without insulin spikes. Magnesium from almonds for GABA activation. Anthocyanins from blueberries for cerebrovascular blood flow.', brand: 'Datça Organic · Direct Farm', dose: '~45g blend' },
+    { label: 'Neuro-Snack Stack', icon: <Flame className="w-5 h-5" />, color: '#F59E0B', title: 'Dark Chocolate 85% · Walnuts · Pumpkin Seeds', detail: 'Theobromine in dark chocolate boosts cerebral blood flow by 10%. Walnuts deliver the highest ALA omega-3 of any nut for DHA synthesis. Pumpkin seeds provide zinc and magnesium—critical cofactors for GABA and serotonin production.', brand: 'Lindt Excellence · Datça Farm', dose: '~40g blend' },
     { label: 'Smart Hydration', icon: <Droplets className="w-5 h-5" />, color: '#10B981', title: 'Oxygenated Alkaline Water', detail: 'pH 8.5+ with dissolved oxygen molecules. Even 1.5% dehydration reduces attention span by 12%. Cold-filled daily in BPA-free glass.', brand: 'Cold-filled · BPA-free glass', dose: '250ml' },
     { label: 'Aromatherapy Focus', icon: <Sparkles className="w-5 h-5" />, color: '#A855F7', title: 'Rosemary + Peppermint Roll-On', detail: 'Applied to temples for instant acetylcholine boost. Rosemary 1,8-cineole proven to increase alertness by 11% in 30 seconds.', brand: 'Art de Huile · 100% Pure', dose: '5ml roll-on' },
     { label: 'Digital Ritual', icon: <QrCode className="w-5 h-5" />, color: '#0088FF', title: 'Neuro-Routine QR Card', detail: 'Daily card with unique QR code. Scan for 2-minute box breathing guide + binaural alpha wave focus audio (10Hz). Tracks wellness score.', brand: 'NeuroBite Digital · Daily', dose: 'Unique daily card' },
