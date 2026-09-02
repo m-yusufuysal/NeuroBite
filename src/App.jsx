@@ -3,6 +3,8 @@ import { useScrollReveal, useCursorGlow, useCounter, useMagnetic } from './hooks
 import { ArrowRight, Play, Zap, Brain, Shield, TrendingUp, Users, Clock, Check, ChevronRight, Star, Sparkles, QrCode, X, Send, CheckCircle2, Building2, Mail, User, Pause, RefreshCw, Volume2, Droplets, Flame, HeartPulse, Award, ThermometerSnowflake, Leaf, MapPin, ArrowUp, Calculator, Eye, ChevronDown, MousePointer, Pill } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
+const BASE = import.meta.env.BASE_URL;
+
 /* ═══════════════════════════════════════════════════════
    NEUROBITE — Premium B2B Corporate Biohacking Platform
    Fable-quality Design with Scroll Animations
@@ -24,7 +26,7 @@ function Navbar({ onSample, onQr }) {
       <div className={`max-w-7xl mx-auto transition-all duration-500 ${scrolled ? 'bg-[#06080F]/80 backdrop-blur-2xl border border-white/[0.04] rounded-2xl shadow-2xl shadow-black/30 mx-4 lg:mx-auto px-6 py-2' : 'px-6'}`}>
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
-            <img src="./logo.png" alt="NeuroBite" className="h-12 w-12 rounded-xl object-cover transition-transform duration-500 group-hover:scale-110 shadow-lg shadow-[#0088FF]/10" />
+            <img src={`${BASE}logo.png`} alt="NeuroBite" className="h-12 w-12 rounded-xl object-cover transition-transform duration-500 group-hover:scale-110 shadow-lg shadow-[#0088FF]/10" />
             <span className="text-xl font-bold tracking-[0.12em] text-white uppercase hidden sm:block">Neuro<span className="text-[#0088FF]">Bite</span></span>
           </a>
 
@@ -123,7 +125,7 @@ function Hero({ onSample }) {
               
               {/* Tray Image */}
               <img 
-                src="./tray.png" 
+                src={`${BASE}tray.png`} 
                 alt="NeuroBite Daily Performance Tray — premium matte black bento with nootropics, superfoods, essential oils, and alkaline water" 
                 className="relative z-10 w-full rounded-3xl animate-float shadow-2xl shadow-black/40"
               />
@@ -206,7 +208,7 @@ function ProductShowcase({ onQr }) {
             <div className="sticky top-32">
               <div className="relative">
                 <div className="absolute inset-0 bg-[#0088FF]/[0.06] rounded-[2rem] blur-[60px] scale-90 opacity-50" />
-                <img src="./tray.png" alt="NeuroBite Daily Tray" className="relative z-10 w-full rounded-2xl shadow-2xl shadow-black/30" />
+                <img src={`${BASE}tray.png`} alt="NeuroBite Daily Tray" className="relative z-10 w-full rounded-2xl shadow-2xl shadow-black/30" />
               </div>
               
               {/* Tray Stats */}
@@ -531,7 +533,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 pb-12 border-b border-white/[0.04]">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <img src="./logo.png" alt="NeuroBite" className="h-10 w-10 rounded-xl object-cover" />
+              <img src={`${BASE}logo.png`} alt="NeuroBite" className="h-10 w-10 rounded-xl object-cover" />
               <span className="text-lg font-bold tracking-[0.15em] text-white/80 uppercase">Neuro<span className="text-[#0088FF]">Bite</span></span>
             </div>
             <p className="text-[14px] text-white/25 leading-relaxed max-w-sm">Daily cognitive nutrition for corporate teams. Science-backed. Cold-delivered. Performance-proven.</p>
