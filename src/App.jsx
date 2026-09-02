@@ -132,10 +132,10 @@ function Hero({ onSample }) {
               
               {/* Floating Label Badges */}
               <div className="absolute -left-4 top-[15%] z-20 glass px-3 py-1.5 rounded-full text-[11px] font-semibold text-white/70 animate-float hidden lg:flex items-center gap-1.5" style={{animationDelay:'0.5s'}}>
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" /> Medjool Date
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-700" /> Dark Chocolate 85%
               </div>
               <div className="absolute -right-4 top-[18%] z-20 glass px-3 py-1.5 rounded-full text-[11px] font-semibold text-white/70 animate-float hidden lg:flex items-center gap-1.5" style={{animationDelay:'1s'}}>
-                <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Blueberries + Almonds
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" /> Walnuts + Pumpkin Seeds
               </div>
               <div className="absolute -left-6 bottom-[30%] z-20 glass px-3 py-1.5 rounded-full text-[11px] font-semibold text-white/70 animate-float hidden lg:flex items-center gap-1.5" style={{animationDelay:'1.5s'}}>
                 <span className="w-1.5 h-1.5 rounded-full bg-purple-400" /> Essential Oil Roll-On
@@ -353,8 +353,8 @@ function Impact({ onSample }) {
   const [count, setCount] = useState(20);
   const [days, setDays] = useState(5);
   const focusHrs = Math.round(count * 1.2 * days * 4.2);
-  const value = Math.round(focusHrs * 35);
-  const cost = count * (days === 5 ? 50 : 35) * 4;
+  const value = Math.round(focusHrs * 40);
+  const cost = count * (days === 5 ? 349 : 249);
   const roi = (value / Math.max(cost, 1)).toFixed(1);
 
   return (
@@ -422,9 +422,9 @@ function Impact({ onSample }) {
 // ─── Plans ────────────────────────────────────────────
 function Plans({ onSample }) {
   const plans = [
-    { name: 'Starter', freq: '3 days/week', price: 'from $7', unit: '/ person / day', desc: 'Peak-day coverage for focused teams.', features: ['Nootropic capsule (Lion\'s Mane)', 'Oxygenated smart water', 'Bio-snack compartment', 'QR focus portal access', '8:30 AM cold delivery'], popular: false },
-    { name: 'Pro', freq: '5 days/week', price: 'from $6', unit: '/ person / day', desc: 'Full-week cognitive coverage. Our most chosen.', features: ['Everything in Starter, daily', 'Omega-3 DHA + CoQ10 + B12', 'Aromatherapy roll-on (weekly)', 'Dietary customization', 'Monthly HR analytics report', 'Dedicated account manager'], popular: true },
-    { name: 'Enterprise', freq: 'Custom', price: 'Custom', unit: 'pricing', desc: 'White-glove program for 50+ teams.', features: ['Custom branded trays', 'Doctor-guided personalization', 'Dedicated delivery fleet', 'HR dashboard integration', 'Quarterly wellness reviews', 'On-site wellness workshops'], popular: false },
+    { name: 'Starter', freq: '3 days/week', price: '$249', unit: '/ person / month', desc: 'Peak-day coverage for key work days. 13 trays per month.', features: ['Lion\'s Mane nootropic capsule', 'Neuro-snack stack (chocolate + walnuts + seeds)', 'Oxygenated alkaline water', 'QR focus ritual portal', '8:30 AM cold chain delivery'], popular: false },
+    { name: 'Pro', freq: '5 days/week', price: '$349', unit: '/ person / month', desc: 'Full-week cognitive coverage. Most chosen by high-output teams.', features: ['Everything in Starter, 5 days', 'Omega-3 DHA + CoQ10 + B12 stack', 'Rosemary aromatherapy roll-on (weekly)', 'Dietary customization per employee', 'Monthly HR performance report', 'Dedicated account manager'], popular: true },
+    { name: 'Enterprise', freq: 'Custom', price: 'Custom', unit: 'pricing', desc: 'White-glove program for 50+ person teams.', features: ['Custom branded trays with your logo', 'Doctor-guided personalization', 'Dedicated cold delivery fleet', 'HR dashboard with wellness analytics', 'Quarterly wellness workshops', 'Volume pricing from $14/tray'], popular: false },
   ];
 
   return (
