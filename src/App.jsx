@@ -24,8 +24,8 @@ function Navbar({ onSample, onQr }) {
       <div className={`max-w-7xl mx-auto transition-all duration-500 ${scrolled ? 'bg-[#06080F]/80 backdrop-blur-2xl border border-white/[0.04] rounded-2xl shadow-2xl shadow-black/30 mx-4 lg:mx-auto px-6 py-2' : 'px-6'}`}>
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
-            <img src="./logo.png" alt="NeuroBite" className="h-9 w-9 rounded-lg object-cover transition-transform duration-500 group-hover:scale-110" />
-            <span className="text-lg font-bold tracking-[0.15em] text-white/90 uppercase hidden sm:block">Neuro<span className="text-[#0088FF]">Bite</span></span>
+            <img src="./logo.png" alt="NeuroBite" className="h-12 w-12 rounded-xl object-cover transition-transform duration-500 group-hover:scale-110 shadow-lg shadow-[#0088FF]/10" />
+            <span className="text-xl font-bold tracking-[0.12em] text-white uppercase hidden sm:block">Neuro<span className="text-[#0088FF]">Bite</span></span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-1">
@@ -531,7 +531,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 pb-12 border-b border-white/[0.04]">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <img src="./logo.png" alt="NeuroBite" className="h-8 w-8 rounded-lg object-cover" />
+              <img src="./logo.png" alt="NeuroBite" className="h-10 w-10 rounded-xl object-cover" />
               <span className="text-lg font-bold tracking-[0.15em] text-white/80 uppercase">Neuro<span className="text-[#0088FF]">Bite</span></span>
             </div>
             <p className="text-[14px] text-white/25 leading-relaxed max-w-sm">Daily cognitive nutrition for corporate teams. Science-backed. Cold-delivered. Performance-proven.</p>
