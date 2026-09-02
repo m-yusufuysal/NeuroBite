@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="500" height="500" rx="100" fill="#080C16" />
+  <g transform="translate(100, 75) scale(0.6)">
+    <!-- Brain Left Hemisphere -->
+    <path d="M 230 40 
+             C 170 30, 110 70, 90 120 
+             C 70 170, 70 230, 90 290 
+             C 110 350, 160 410, 230 430 
+             L 230 40 Z" 
+          fill="none" stroke="#0088FF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Left Internal Folds -->
+    <path d="M 230 110 C 150 110, 130 160, 190 190 C 120 220, 140 300, 230 310" 
+          fill="none" stroke="#0088FF" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 230 360 C 170 360, 160 380, 200 400" 
+          fill="none" stroke="#0088FF" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Brain Right Hemisphere with Bite Mark cutout -->
+    <path d="M 270 40 
+             C 330 40, 390 60, 420 100 
+             C 390 130, 390 170, 420 190 
+             C 380 210, 380 250, 430 270 
+             C 410 330, 370 400, 270 430 
+             L 270 40 Z" 
+          fill="none" stroke="#0088FF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Internal Folds -->
+    <path d="M 270 110 C 330 120, 340 170, 280 200 C 350 220, 330 300, 270 320" 
+          fill="none" stroke="#0088FF" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 270 360 C 310 360, 320 380, 290 400" 
+          fill="none" stroke="#0088FF" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>
